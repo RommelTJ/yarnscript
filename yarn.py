@@ -66,7 +66,7 @@ def handleProduct(brand_name, product_url):
         gauge,temp3 = temp2.split(" on a ")
         needle,package = temp3.split(". Packaged as ")
         out += "%s,%s,%s,%s,%s" %(materials, weight, gauge, needle, package)
-        #print out
+        print out
     except ValueError:
         return
 
