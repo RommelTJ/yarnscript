@@ -65,7 +65,7 @@ def handleProduct(brand_name, product_url):
         weight,temp2 = temp.split(" that knits to ")
         gauge,temp3 = temp2.split(" on a ")
         needle,package = temp3.split(". Packaged as ")
-        out += "%s,%s,%s,%s,%s" %(materials, weight, gauge, needle, package)
+        out += "%s,%s,%s,%s,%s" %(weight, gauge, needle, package, materials)
         print out
     except ValueError:
         return
@@ -79,8 +79,8 @@ def cleanMaterials(materials_raw):
     mat = mat.replace(" wPailletes", "")
     mat = mat.replace("Nylon (polyamide)", "Polyamide")
     mat = mat.replace("SuperFine", "Superfine")
-    mat = mat.replact("Super-fine", "Superfine")
-    mat = mat.replact("Super-Fine", "Superfine")
+    mat = mat.replace("Super-fine", "Superfine")
+    mat = mat.replace("Super-Fine", "Superfine")
     mat = mat.replace("SuperWash", "Superwash")
     mat = mat.replace("Superkid", "Super Kid")
     mat = mat.replace("ExtraFine", "Extrafine")
