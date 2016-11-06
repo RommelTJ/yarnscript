@@ -85,6 +85,7 @@ def cleanMaterials(materials_raw):
     mat = mat.replace("Superkid", "Super Kid")
     mat = mat.replace("ExtraFine", "Extrafine")
     mat = mat.replace("Extra Fine", "Extrafine")
+    mat = mat.replace("Extra-Fine", "Extrafine")
     mat = mat.replace("Merino Wool", "Merino")
     mat = mat.replace("WooI", "Wool")
     mat = mat.replace("Roving Wool", "Wool (Roving)")
